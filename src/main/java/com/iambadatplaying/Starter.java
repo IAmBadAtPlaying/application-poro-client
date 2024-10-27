@@ -24,7 +24,7 @@ public class Starter {
 
     public static final int VERSION_MAJOR = 0;
     public static final int VERSION_MINOR = 1;
-    public static final int VERSION_PATCH = 8;
+    public static final int VERSION_PATCH = 0;
 
     public static final int DEBUG_FRONTEND_PORT    = 3000;
     public static final int DEBUG_FRONTEND_PORT_V2 = 3001;

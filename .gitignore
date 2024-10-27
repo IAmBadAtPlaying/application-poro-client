@@ -6,8 +6,6 @@ Poro-Client-Updater.iml
 /out/
 /target/
 
-#unused
-/src/test/
 
 /node_modules
 /package-lock.json
