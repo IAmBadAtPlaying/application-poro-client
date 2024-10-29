@@ -32,7 +32,6 @@ public class ChallengeSummaryDataManager extends MapDataManager<String> {
         log(data, Starter.LOG_LEVEL.DEBUG);
         if (data == null) return Optional.empty();
         if (data.has("errorCode")) return Optional.empty();
-        sendKeyUpdate(key);
         return Optional.of(data);
     }
 

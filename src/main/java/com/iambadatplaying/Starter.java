@@ -20,7 +20,7 @@ import java.nio.file.Paths;
 public class Starter {
 
     //FIXME: Change this to false before release
-    public static final boolean isDev = false;
+    public static final boolean isDev = true;
 
     public static final int VERSION_MAJOR = 0;
     public static final int VERSION_MINOR = 1;
@@ -29,7 +29,6 @@ public class Starter {
     public static final int DEBUG_FRONTEND_PORT    = 3000;
     public static final int DEBUG_FRONTEND_PORT_V2 = 3001;
     public static final int RESOURCE_SERVER_PORT   = 35199;
-    public static final int FRONTEND_SOCKET_PORT   = 8887;
 
     private static final String   appDirName                                = "poroclient";
     public static        Starter  instance                                  = null;

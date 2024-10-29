@@ -39,7 +39,6 @@ public abstract class MapDataManager<T> extends BasicDataManager {
     public Optional<JsonObject> get(T key) {
         if (map.containsKey(key)) return Optional.ofNullable(map.get(key));
         Optional<JsonObject> value = load(key);
-        value.ifPresent(jsonObject -> map.put(key, jsonObject));
         return value;
     }
 
@@ -51,6 +50,7 @@ public abstract class MapDataManager<T> extends BasicDataManager {
                 jsonObject -> {
                     if (!Util.equalJsonElements(jsonObject, map.get(key))) {
                         sendKeyUpdate(key, jsonObject);
+                        map.put(key, jsonObject);
                     }
                 }
         );
